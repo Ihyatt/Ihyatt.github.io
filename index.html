@@ -145,29 +145,39 @@ Bachelor’s degree, Ethnic Studies
 
 <div class="row" style=" text-align: center;">
 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3"> 
-  <dl>
-  <dt>
+  
 <h3 style="font-weight: 700; padding: 40px 0 0px 0;color:#3F3F3F; ">Languages & Techonologies Known</h3>
 <!-- <br>
 <br> -->
+<script src="//variancecharts.com/cdn/variance-noncommercial-standalone-f47ffcf.min.js" charset="UTF-8"></script>
 
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">Python: 90%</span></dd>
-  <dd class="percentage percentage-90"><span class="text">SQLAlchemy: 90%</span></dd>
-  <dd class="percentage percentage-90"><span class="text">PostgreSQL: 90%</span></dd>
-  <dd class="percentage percentage-5"><span class="text">Safari: 5.41%</span></dd>
-  <dd class="percentage percentage-2"><span class="text">Opera: 1.62%</span></dd>
-  <dd class="percentage percentage-2"><span class="text">Android 4.4: 2%</span></dd>
-</dl>
+<link id="sales" rel="variance-data" href="//variancecharts.com/data/sales.csv">
+
+<div id="bar-grouped">
+
+  <h3>Regional Sales, By Quarter</h3>
+
+  <chart class="bar"
+         data="#sales"
+         map-length="sales"
+         scale-x-linear="0 900">
+    <guide-x></guide-x>
+    <groups by="quarter">
+      <annotation class="quarter left">{{quarter}}</annotation>
+      <repeat>
+        <bar></bar>
+        <annotation class="region left">{{region}}</annotation>
+      </repeat>
+    </groups>
+  </chart>
+
+</div>
 
 
 
 
 
-
-
-
-<!-- <img src="img/git_logo.png" alt="git Logo" class="img-responsive" width="80" style="display:inline-block; margin: 10px;">
+<img src="img/git_logo.png" alt="git Logo" class="img-responsive" width="80" style="display:inline-block; margin: 10px;">
 
 <img src="img/imgres.jpg" alt="SQL Alch" class="img-responsive" width="80" style="display:inline-block; margin: 10px;">
 
@@ -190,8 +200,7 @@ Bachelor’s degree, Ethnic Studies
 
 <img src="img/react.png" alt="React Logo" class="img-responsive" width="80" style="display:inline-block; margin: 10px;">
 
-<img src="img/learn-javascript.png" alt="JS Logo" class="img-responsive" width="80" style="display:inline-block; margin: 10px;"> -->
-
+<img src="img/learn-javascript.png" alt="JS Logo" class="img-responsive" width="80" style="display:inline-block; margin: 10px;">
 </div>
 
 </div>
